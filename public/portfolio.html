@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Ru Pinzon | DESIGN PORTFOLIO</title>
   </head>
   <body class="text-zinc-600 font-body">
     <div class="grid md:grid-cols-4">
       <div class="md:col-span-1 md:flex md:justify-end">
-        <nav class="text-right fixed">
+        <nav class="text-right md:fixed">
           <div class="flex justify-between items-center">
-            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a
-                href="index.html"
-                class="text-teal-500 text-sm md:text-2xl hover:text-teal-700"
-                >Ru Logo</a
-              >
-            </h1>
+            <a
+              href="index.html"
+              class="text-teal-300 text-sm md:text-2xl hover:text-teal-700 border-b border-gray-100"
+            >
+              <h1 class="font-bold uppercase p-4 md:hidden">Rú Diseño</h1>
+              <img
+                src="img/logo.png"
+                alt="Logo"
+                class="w-1/2 h-1/2 hidden md:block md:float-right"
+              />
+            </a>
             <div id="burger" class="px-4 cursor-pointer md:hidden">
               <svg
                 class="w-6 h-6"
@@ -36,7 +44,7 @@
               </svg>
             </div>
           </div>
-          <ul id="menu" class="text-sm mt-6 pr-4 hidden md:block">
+          <ul id="menu" class="text-sm mt-6 mb-6 md:mb-0 pr-4 hidden md:block">
             <li class="text-bold py-1">
               <a
                 href="index.html"
@@ -168,11 +176,9 @@
           ></a>
         </div> -->
 
-        <header>
-          <h2 class="text-teal-600 text-5xl font-semibold">Mi Portafolio</h2>
-          <h3 class="text-2xl font-semibold">
-            Mira alguno de los proyectos en los que he trabajado
-          </h3>
+        <header class="flex flex-col text-center">
+          <h2 class="text-teal-600 text-5xl font-semibold">Portafolio</h2>
+          <h3 class="text-2xl font-semibold">Mis mejores proyectos</h3>
         </header>
 
         <div>
@@ -216,7 +222,7 @@
                 class="w-full h-32 sm:h-60 object-cover"
               />
               <div class="m-4">
-                <span class="font-bold">Diseño e ilustración</span>
+                <span class="font-bold">Ilustración</span>
                 <span class="block text-gray-500 text-sm"
                   >Proyecto: Calendario Emocional</span
                 >
@@ -275,7 +281,7 @@
             </div>
           </div>
           <h4 class="text-bold mt-10 pb-2 border-b">Otros proyectos</h4>
-          <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div class="my-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             <!-- Cards go here -->
             <div class="card hover:shadow-lg md:col-span-2">
               <img
@@ -337,9 +343,9 @@
             </div>
           </div>
 
-          <div class="mt-4 flex justify-center">
+          <div class="mt-4 flex justify-center text-black">
             <div
-              class="btn bg-neutral-900 text-slate-200 transform hover:scale-125 hover:bg-opacity-50"
+              class="btn bg-teal-200 transform hover:scale-125 hover:bg-opacity-50"
             >
               Mira más proyectos
             </div>
@@ -347,7 +353,42 @@
         </div>
       </main>
     </div>
-
+    <footer class="py-4">
+      <div class="container px-4">
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center mb-4 md:mb-0">
+            <div class="text-sm font-semibold">
+              Copyright © 2022. Rú: Diseño
+            </div>
+          </div>
+          <div class="flex flex-row">
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="instagram.com"
+              target="_blank"
+            >
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="behance.com"
+              target="_blank"
+            >
+              <i class="fab fa-behance text-white"></i>
+            </a>
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="linkedin.com"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

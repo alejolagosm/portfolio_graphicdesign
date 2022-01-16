@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>DESIGN PORTFOLIO</title>
   </head>
   <body class="text-zinc-600 font-body">
-    <div class="grid md:grid-cols-4">
+    <div class="grid md:grid-cols-4" style="height: 90vh">
       <div class="md:col-span-1 md:flex md:justify-end">
-        <nav class="text-right fixed">
+        <nav class="text-right md:fixed">
           <div class="flex justify-between items-center">
-            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a
-                href="index.html"
-                class="text-teal-500 text-sm md:text-2xl hover:text-teal-700"
-                >Ru Logo</a
-              >
-            </h1>
-            <div id="burger" class="px-4 cursor-pointer md:hidden">
+            <a
+              href="index.html"
+              class="text-teal-300 text-sm md:text-2xl hover:text-teal-700 border-b border-gray-100"
+            >
+              <h1 class="font-bold uppercase p-4 md:hidden">Rú Diseño</h1>
+              <img
+                src="img/logo.png"
+                alt="Logo"
+                class="w-1/2 h-1/2 hidden md:block md:float-right"
+              />
+            </a>
+
+            <div
+              id="burger"
+              class="px-4 cursor-pointer md:hidden text-teal-300"
+            >
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -36,7 +48,7 @@
               </svg>
             </div>
           </div>
-          <ul id="menu" class="text-sm mt-6 pr-4 hidden md:block">
+          <ul id="menu" class="text-sm mt-6 mb-6 md:mb-0 pr-4 hidden md:block">
             <li class="text-bold py-1">
               <a
                 href="index.html"
@@ -129,55 +141,57 @@
           </ul>
         </nav>
       </div>
-      <main
-        class="px-10 md:col-span-3 flex justify-center"
-        style="height: 100vh"
-      >
-        <section class="py-10 lg:pt-0 flex justify-center align-middle">
-          <div class="container mx-auto px-4">
+      <main class="px-4 md:px-10 md:col-span-3 flex justify-center bg-gray-200">
+        <section
+          class="py-10 lg:pt-0 flex justify-center align-middle text-black"
+        >
+          <div class="container mx-auto md:px-4">
             <div class="flex flex-wrap justify-center">
-              <div class="w-full lg:w-6/12 px-4">
+              <div class="w-full lg:w-6/12 md:px-4">
                 <div
-                  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white"
                 >
                   <div class="flex-auto p-5 lg:p-10">
-                    <h4 class="text-2xl font-semibold">Trabajemos juntos!</h4>
-                    <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                      Completa este formulario y empezaremos tu nuevo proyecto!
+                    <h4 class="text-2xl font-semibold text-center">
+                      Trabajemos juntos!
+                    </h4>
+                    <p class="leading-relaxed mt-1 mb-4 text-center">
+                      Completa este formulario y empezaremos tu nuevo proyecto
+                      😍
                     </p>
                     <div class="relative w-full mb-3 mt-8">
                       <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        class="block uppercase text-black text-xs font-bold mb-2"
                         for="full-name"
                         >Nombre completo</label
                       ><input
                         type="text"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none w-full"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-black bg-white rounded text-sm shadow focus:outline-none w-full"
                         placeholder="Nombre completo"
                         style="transition: all 0.15s ease 0s"
                       />
                     </div>
                     <div class="relative w-full mb-3">
                       <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        class="block uppercase text-black text-xs font-bold mb-2"
                         for="email"
                         >Email</label
                       ><input
                         type="email"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none w-full"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-black bg-white rounded text-sm shadow focus:outline-none w-full"
                         placeholder="Email"
                         style="transition: all 0.15s ease 0s"
                       />
                     </div>
                     <div class="relative w-full mb-3">
                       <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        class="block uppercase text-black text-xs font-bold mb-2"
                         for="message"
-                        >Message</label
+                        >Mensaje</label
                       ><textarea
                         rows="4"
                         cols="80"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none w-full"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-black bg-white rounded text-sm shadow focus:outline-none w-full"
                         placeholder="Escribeme un mensaje..."
                       ></textarea>
                     </div>
@@ -198,7 +212,42 @@
         </section>
       </main>
     </div>
-
+    <footer class="py-4">
+      <div class="container px-4">
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center mb-4 md:mb-0">
+            <div class="text-sm font-semibold">
+              Copyright © 2022. Rú: Diseño
+            </div>
+          </div>
+          <div class="flex flex-row">
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="instagram.com"
+              target="_blank"
+            >
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="behance.com"
+              target="_blank"
+            >
+              <i class="fab fa-behance text-white"></i>
+            </a>
+            <a
+              class="bg-teal-500 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="linkedin.com"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
